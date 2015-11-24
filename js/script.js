@@ -207,12 +207,12 @@ function parallax() {
 
     // main directions
       map = new GMaps({
-        el: '#map', lat: 23.790223, lng: 90.414036, zoom: 13, zoomControl : true, 
+        el: '#map', lat: 13.6785437, lng: 100.5251377, zoom: 15, zoomControl : true,
         zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, panControl : false, scrollwheel: false
       });
     // add address markers
-    map.addMarker({ lat: 23.790223, lng: 90.414036, title: 'BD InfoSys',
-      infoWindow: { content: '<p>Building # 2, Plot # 111, Road # 35, Gulshan - 2, Dhaka</p>' } });
+    map.addMarker({ lat: 13.6785437, lng: 100.5251377, title: 'Tanny',
+      infoWindow: { content: '<p>Lumphini Park Riverside Rama 3, Bang Phong Phang, Yannawa, 10120 Bangkok</p>' } });
 
 /*----------------------------------------------------*/
 /*	contact form
