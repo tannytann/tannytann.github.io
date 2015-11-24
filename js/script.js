@@ -207,11 +207,11 @@ function parallax() {
 
     // main directions
       map = new GMaps({
-        el: '#map', lat: 13.6785437, lng: 100.5251377, zoom: 15, zoomControl : true,
+        el: '#map', lat: 13.678979, lng: 100.5294189, zoom: 15, zoomControl : true,
         zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, panControl : false, scrollwheel: false
       });
     // add address markers
-    map.addMarker({ lat: 13.6785437, lng: 100.5251377, title: 'Tanny',
+    map.addMarker({ lat: 13.678979, lng: 100.5294189, title: 'Tanny',
       infoWindow: { content: '<p>Lumphini Park Riverside Rama 3, Bang Phong Phang, Yannawa, 10120 Bangkok</p>' } });
 
 /*----------------------------------------------------*/
