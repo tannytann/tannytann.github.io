@@ -231,10 +231,10 @@ function parallax() {
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
       $.ajax({
-
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
+          url: "//formspree.io/vipada@srisawat.me",
+          method: "POST",
+          data: {name: contactName, email: contactEmail, _subject: contactSubject, message: contactMessage},
+          dataType: "json",
 	      success: function(msg) {
 
             // Message was sent
