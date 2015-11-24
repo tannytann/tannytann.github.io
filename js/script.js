@@ -235,10 +235,10 @@ function parallax() {
           method: "POST",
           data: {name: contactName, email: contactEmail, _subject: contactSubject, message: contactMessage},
           dataType: "json",
-	      success: function(msg) {
+	      success: function(result) {
 
             // Message was sent
-            if (msg == 'OK') {
+            if ( jQuery.type( result ) === "object" && "undefined" !== result.success && result.success == 'email sent') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
