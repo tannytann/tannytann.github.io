@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         cssmin: {
             target: {
                 files: {
-                    'css/output.css': ['css/default.css', 'css/style.css', 'css/responsive.css', 'css/animate.css', 'css/magnific-popup.css', 'assets/owl-carousel/owl.carousel.css', 'assets/owl-carousel/owl.theme.css']
+                    'css/output.css': ['css/default.css', 'css/style.css', 'css/responsive.css', 'css/magnific-popup.css', 'assets/owl-carousel/owl.carousel.css', 'assets/owl-carousel/owl.theme.css']
                 }
             }
         }
