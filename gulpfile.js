@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     concatCss = require('gulp-concat-css');
 
-gulp.task('deploy', [], function () {
+gulp.task('surge', [], function () {
     return surge({
         project: './',         // Path to your static build directory
         domain: 'vipada.srisawat.me'  // Your domain or Surge subdomain
@@ -48,3 +48,4 @@ gulp.task('css-minify', function() {
 gulp.task('js', ['js-concat', 'js-minify']);
 gulp.task('css', ['css-concat', 'css-minify']);
 gulp.task('build', ['js', 'css']);
+gulp.task('deploy', ['build', 'surge']);
