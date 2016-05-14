@@ -14,7 +14,7 @@ gulp.task('surge', [], function () {
 });
 
 gulp.task('js-concat', function() {
-    gulp.src(['js/gmaps.js', 'assets/owl-carousel/owl.carousel.min.js', 'js/waypoints.js', 'js/jquery.fittext.js', 'js/wow.min.js', 'js/jquery.nicescroll.min.js', 'js/script.js'])
+    gulp.src(['js/gmaps.js', 'js/waypoints.js', 'js/jquery.fittext.js', 'js/wow.min.js', 'js/jquery.nicescroll.min.js', 'js/script.js'])
         .pipe(concat('dist.js'))
         .pipe(concat.header('// file: <%= file.path %>\n'))
         .pipe(concat.footer('\n// end\n'))
@@ -31,7 +31,7 @@ gulp.task('js-minify', function() {
 });
 
 gulp.task('css-concat', function () {
-    return gulp.src(['css/default.css', 'css/style.css', 'css/responsive.css', 'css/animate.css', 'assets/owl-carousel/owl.carousel.css', 'assets/owl-carousel/owl.theme.css'])
+    return gulp.src(['css/default.css', 'css/style.css', 'css/responsive.css', 'css/animate.css'])
         .pipe(concatCss('dist.css'))
         .pipe(gulp.dest('css'));
 });
