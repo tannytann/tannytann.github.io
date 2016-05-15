@@ -14,7 +14,7 @@ gulp.task('surge', [], function () {
 });
 
 gulp.task('js-concat', function() {
-    gulp.src(['js/gmaps.js', 'js/waypoints.js', 'js/jquery.fittext.js', 'js/wow.min.js', 'js/jquery.nicescroll.min.js', 'js/script.js'])
+    gulp.src(['js/waypoints.js', 'js/jquery.fittext.js', 'js/wow.min.js', 'js/jquery.nicescroll.min.js', 'js/script.js'])
         .pipe(concat('dist.js'))
         .pipe(concat.header('// file: <%= file.path %>\n'))
         .pipe(concat.footer('\n// end\n'))
