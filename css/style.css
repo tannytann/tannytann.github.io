@@ -654,9 +654,8 @@ ul#nav li a:hover {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding: 8px 15px;
+  padding: 8px 15px !important;
   transition: box-shadow 0.5s ease-in 0.1s;
-
 }
 
 /*----------------------------------------------*/
