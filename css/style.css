@@ -522,6 +522,13 @@ ul#nav li a:hover {
    margin-top: 6px;
 }
 
+/* Style the hints */
+
+.hint {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
 /* Timeline Layout */
 
 

@@ -13,15 +13,22 @@ gulp.task('surge', [], function () {
     })
 });
 
-gulp.task('js-concat', function() {
-    gulp.src(['js/waypoints.js', 'js/jquery.fittext.js', 'js/wow.min.js', 'js/jquery.nicescroll.min.js', 'js/script.js'])
+gulp.task('js-concat', function () {
+    gulp.src(
+        [
+            'js/waypoints.js',
+            'js/jquery.fittext.js',
+            'js/wow.min.js',
+            'js/jquery.nicescroll.min.js',
+            'js/script.js'
+        ])
         .pipe(concat('dist.js'))
         .pipe(concat.header('// file: <%= file.path %>\n'))
         .pipe(concat.footer('\n// end\n'))
         .pipe(gulp.dest('js'));
 });
 
-gulp.task('js-minify', function() {
+gulp.task('js-minify', function () {
     return gulp.src('js/dist.js')
         .pipe(uglify())
         .pipe(rename({
@@ -31,12 +38,19 @@ gulp.task('js-minify', function() {
 });
 
 gulp.task('css-concat', function () {
-    return gulp.src(['css/default.css', 'css/style.css', 'css/responsive.css', 'css/animate.css'])
+    return gulp.src(
+        [
+            'css/default.css',
+            'css/style.css',
+            'css/responsive.css',
+            'css/animate.css',
+            'node_modules/hint.css/hint.css'
+        ])
         .pipe(concatCss('dist.css'))
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('css-minify', function() {
+gulp.task('css-minify', function () {
     return gulp.src('css/dist.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename({
