@@ -607,6 +607,16 @@ ul#nav li a:hover {
   padding-bottom: 20px;
 }
 
+.timeline-event-copy ul li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.timeline-event-copy ul {
+    list-style: disc;
+}
+
 .timeline-event-icon {
   -moz-transition: -moz-transform 0.2s ease-in;
   -o-transition: -o-transform 0.2s ease-in;
