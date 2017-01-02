@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 gulp.task('surge', [], function () {
     return surge({
         project: './',         // Path to your static build directory
-        domain: 'vipada.srisawat.me'  // Your domain or Surge subdomain
+        domain: 'vipada.srisawat.co'  // Your domain or Surge subdomain
     })
 });
 
