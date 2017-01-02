@@ -143,7 +143,7 @@ jQuery(document).ready(function ($) {
     $contactForm.submit(function(e) {
         e.preventDefault();
         $.ajax({
-            url: '//formspree.io/vipada@srisawat.me',
+            url: '//formspree.io/vipada@srisawat.co',
             method: 'POST',
             data: $(this).serialize(),
             dataType: 'json',
